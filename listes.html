@@ -6,7 +6,7 @@
     <meta name='viewport' content='widht=devive-wihdt, initial-scale=1.0'>
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
     <meta name='author' content='John Yakou'>
-    <title>Site multipages</title>
+    <title>Ma page listes</title>
 
     <!-- Google Font -->
 
@@ -63,14 +63,14 @@
 
     <nav>
         <div class="ancreNav">
-            <a href="index.html" class="active">Structure</a>
+            <a href="index.html">Structure</a>
             <a href="texte.html">Texte</a>
             <a href="selecteur.html">Sélecteur</a>
             <a href="image.html">Images</a>
             <a href="position.html">Positions</a>
             <a href="tableau.html">Tableaux</a>
             <a href="zoning.html">Zoning</a>
-            <a href="listes.html">Listes</a>
+            <a href="listes.html" class="active">Listes</a>
             <a href="lien_menu.html">Liens & menus</a>
             <a href="formulaire.html">Formulaires</a>
             <a href="multimedia.html">Multimedias</a>
@@ -79,24 +79,59 @@
     </nav>
 
     <main>
-        <!-- main = contenu principal, exclusif à cette page -->
-        <aside>
-            <!-- contenu secondaire -->
-        </aside>
+        <h2>Listes</h2>
 
         <section>
-            <!-- titres, texte, regroupé par thématiques -->
-            <div>
-                <!-- zone de contanu supplémentaire, type block-->
-            </div>
+            <h3>Les listes non-ordonnées - ul</h3>
 
-            <span>
-                <!-- Zone de contenu supplémentairen type inline-->
-            </span>
+            <ul class="fruits">
+                <li><i class="fas fa-carrot"></i> Carotte</li>
+                <li><i class="fas fa-apple-alt"></i> Pomme</li>
+                <li><i class="fas fa-lemon"></i> Citron</li>
+            </ul>
+        </section>
 
-            <article>
-                <!-- Encore du contenu -->
-            </article>
+        <section>
+            <h3>Les listes ordonnées - ol</h3>
+
+            <ol>
+                <li>HTML / CSS</li>
+                <li>PHP / SQL</li>
+                <li>JS / JQUERRY</li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Listes imbriquées</h3>
+
+            <ul class="imbriquee">
+                <li class="europe">Europe
+                    <ul>
+                        <li>France</li>
+                        <li>Allemagne</li>
+                        <li>Royaume-Uni</li>
+                    </ul>
+                </li>
+                <li class="asie">Asie
+                    <ul>
+                        <li>Chine</li>
+                        <li>Japon</li>
+                        <li>Corée du Sud</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Listes de définition</h3>
+
+            <dl>
+                <!-- dl = Definition List-->
+                <dt>F</dt>
+                <dd>Foxtrot</dd>
+                <dd>France</dd>
+                <dd>Food</dd>
+            </dl>
         </section>
     </main>
 

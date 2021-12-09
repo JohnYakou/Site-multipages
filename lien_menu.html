@@ -6,7 +6,7 @@
     <meta name='viewport' content='widht=devive-wihdt, initial-scale=1.0'>
     <meta http-equiv='X-UA-Compatible' content='ie=edge'>
     <meta name='author' content='John Yakou'>
-    <title>Site multipages</title>
+    <title>Les liens et les menus</title>
 
     <!-- Google Font -->
 
@@ -63,7 +63,7 @@
 
     <nav>
         <div class="ancreNav">
-            <a href="index.html" class="active">Structure</a>
+            <a href="index.html">Structure</a>
             <a href="texte.html">Texte</a>
             <a href="selecteur.html">Sélecteur</a>
             <a href="image.html">Images</a>
@@ -71,7 +71,7 @@
             <a href="tableau.html">Tableaux</a>
             <a href="zoning.html">Zoning</a>
             <a href="listes.html">Listes</a>
-            <a href="lien_menu.html">Liens & menus</a>
+            <a href="lien_menu.html" class="active">Liens & menus</a>
             <a href="formulaire.html">Formulaires</a>
             <a href="multimedia.html">Multimedias</a>
             <a href="animation.html">Animations</a>
@@ -79,24 +79,98 @@
     </nav>
 
     <main>
-        <!-- main = contenu principal, exclusif à cette page -->
-        <aside>
-            <!-- contenu secondaire -->
-        </aside>
+        <h2>Liens & menus</h2>
 
-        <section>
-            <!-- titres, texte, regroupé par thématiques -->
-            <div>
-                <!-- zone de contanu supplémentaire, type block-->
-            </div>
+        <div class="ancre">
+            <a href="#lien">Les liens</a>
+            <a href="#menu">Les menus</a>
+            <a href="#menuDeroulant">Les menus déroulant</a>
+        </div>
 
-            <span>
-                <!-- Zone de contenu supplémentairen type inline-->
-            </span>
+        <section id="lien">
+            <h3>Les liens</h3>
 
-            <article>
-                <!-- Encore du contenu -->
-            </article>
+            <a href="https://codepen.io" target="_blank"
+                title="Se rendre sur le site CodePen, s'ouvre dans un nouvel onglet">
+                CodePen is a social development environment for front-end designers and developers
+            </a>
+
+            <br>
+
+            <a href="files/John CV.pdf">Voir mon CV</a>
+
+            <br>
+
+            <a href="files/John CV.pdf">Voir mon CV</a>
+
+            <br>
+
+            <a href="#" onclick="window.print()">Imrpimer la page</a>
+
+            <br>
+
+            <p>
+                Cliquez
+                <a href="index.html">ici</a>
+                pour vous rendre à la page d'accueil.
+            </p>
+        </section>
+
+        <section id="menu">
+            <h3>Les menus</h3>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Parcours</a></li>
+                    <li><a href="#">Compétences</a></li>
+                    <li><a href="#">Réalisations</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section id="menuDeroulant">
+            <h3>Les menus déroulant</h3>
+
+            <nav>
+                <ul class="niveau1">
+                    <li><a href="#">Accueil</a></li>
+
+                    <li class="sousMenu">
+                        <a href="#">Formation</a>
+
+                        <ul class="niveau2">
+                            <li><a href="#">Etudiant</a></li>
+                            <li><a href="#">Emploi du temps</a></li>
+                            <li><a href="#">Recherche d'emploi</a></li>
+                            <li><a href="#">Document</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Informations</a></li>
+
+                    <li class="sousMenu">
+                        <a href="#">Cours</a>
+
+                        <ul class="niveau2">
+                            <li><a href="#">Internet</a></li>
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CMS</a></li>
+                            <li><a href="#">Stats</a></li>
+                            <li><a href="#">Réseau sociaux</a></li>
+                            <li><a href="#">Référencement</a></li>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Cahier des charges</a></li>
+                            <li><a href="#">Photoshop</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">Mon CV</a>
+                    </li>
+                </ul>
+            </nav>
         </section>
     </main>
 
